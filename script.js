@@ -36,3 +36,7 @@ document.querySelectorAll(".mine-box").forEach(box => {
         window.location.href = `${mineName.toLowerCase()}.html`;
     });
 });
+
+function goBack() {
+    window.history.back();
+}
