@@ -31,7 +31,7 @@ header h2 {
 header h3 {
     font-size: 1.3em;
     margin: 8px 0;
-    text-align: left;
+    text-align: center;
     color: #ececec;
 }
 
@@ -136,3 +136,4 @@ header h3 {
         align-items: center;
     }
 }
+
