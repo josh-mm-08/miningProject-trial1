@@ -1,0 +1,159 @@
+/* ===== Reset general ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #1e1e1e, #2d2d2d);
+    color: #f5f5f5;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+/* ===== Encabezados ===== */
+header h1 {
+    font-size: 2.8em;
+    margin: 20px 0 10px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+header h2 {
+    font-size: 1.6em;
+    margin: 10px 0;
+    color: #dcdcdc;
+}
+
+header h3 {
+    font-size: 1.3em;
+    margin: 8px 0;
+    text-align: center;
+    color: #ececec;
+}
+
+/* ===== Slogan ===== */
+.slogan {
+    font-style: italic;
+    color: #bbbbbb;
+}
+
+/* ===== Botones generales ===== */
+.mine-box, .area-bttn {
+    background: linear-gradient(145deg, darkolivegreen, #3c532d);
+    color: #fff;
+    padding: 18px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 170px;
+    text-align: center;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.mine-box:hover, .area-bttn:hover {
+    background: linear-gradient(145deg, olive, #4d6336);
+    transform: scale(1.05);
+}
+
+/* ===== Grids y contenedores ===== */
+.mine-list, .areas-buttons, .epp-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.epp-item {
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 12px;
+    flex: 1 1 220px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.epp-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+/* ===== Imágenes ===== */
+.mine-photo, .epp-example {
+    width: 85%;
+    max-width: 700px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.epp-photo {
+    display: block;
+    margin: 25px auto;
+    max-width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.epp-photo:hover {
+    transform: scale(1.08);
+}
+
+/* ===== Botón volver ===== */
+.back-bttn {
+    background: linear-gradient(145deg, #c19a6b, #a9825e);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.back-bttn:hover {
+    background: linear-gradient(145deg, #dba676, #c18c5a);
+    transform: scale(1.05);
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.area-bttn.active, .mine-box.active {
+    transform: scale(0.95);
+    background-color: #5a7a20;
+    transition: transform 0.1s, background-color 0.1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opcaity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Responsividad ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    .mine-box, .area-bttn {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .epp-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
