@@ -42,7 +42,7 @@ header h3 {
 }
 
 .logo{
-    width: 100px;
+    width: 200px;
     max-width: 30%;
     height: auto;
     margin: 20px auto;
@@ -165,4 +165,5 @@ header h3 {
         align-items: center;
     }
 }
+
 
