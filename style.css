@@ -42,10 +42,9 @@ header h3 {
 }
 
 .logo{
-    max-width: 200px;
-    width: 50%;
-    max-height: 120px;
-    height: auto;
+    max-width: 180px;
+    width: auto;
+    max-height: 100px;
     margin: 20px auto;
     display: block;
 }
@@ -164,6 +163,18 @@ header h3 {
     .epp-grid {
         flex-direction: column;
         align-items: center;
+    }
+
+    .logo {
+        max-width: 260px;
+        max-height: 150px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        max-width: 260px;
+        max-height: 150px;
     }
 }
 
